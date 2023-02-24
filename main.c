@@ -3,7 +3,6 @@ main() {
         biggest2();
         factorial();
         reverse();
-        calculator();
         palindrome();
         prime();
 }
