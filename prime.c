@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int main() {
-
+primenumber() 
+{
   int n, i, flag = 0;
   printf("Enter a positive integer: ");
   scanf("%d", &n);
@@ -27,5 +27,5 @@ int main() {
   else
     printf("%d is not a prime number.", n);
 
-  return 0;
+  //return 0;
 }
