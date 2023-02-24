@@ -1,5 +1,5 @@
-ABC.exe:main.o big2.o fact.o rev.o palindrome.o prime.o big3.o sum.o sorting.o
-	gcc -o ABC.exe main.o big2.o fact.o rev.o palindrome.o prime.o big3.o sum.o sorting.o
+ABC.exe:main.o big2.o fact.o rev.o palindrome.o prime.o big3.o 
+	gcc -o ABC.exe main.o big2.o fact.o rev.o palindrome.o prime.o big3.o 
 main.o:main.c
 	gcc -c main.c
 big2.o:big2.c
@@ -14,7 +14,4 @@ prime.o:prime.c
 	gcc -c prime.c
 big3.o:big3.c
 	gcc -c big3.c
-sum.o:sum.c
-	gcc -c sum.c
-sorting.o:sorting.c
-	gcc -c sorting.c
+
