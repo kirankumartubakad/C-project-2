@@ -1,5 +1,5 @@
 #include<stdio.h>
-pallindrome()
+palindrome()
 {
 int n,r,sum=0,temp;
 printf("enter the number=");
