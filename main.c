@@ -6,6 +6,4 @@ main() {
         calculator();
         palindrome();
         prime();
-        sum();
-        sorting();
 }
