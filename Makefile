@@ -13,4 +13,4 @@ cal.o:cal.c
 palindrome.o:palindrome.c
         gcc -c palindrome.c
 prime.o:prime.c
-        gcc - prime.c
+        gcc -c prime.c
