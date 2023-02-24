@@ -4,4 +4,6 @@ main() {
         factorial();
         reverse();
         calculator();
+        palindrome();
+        prime();
 }
