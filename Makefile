@@ -9,7 +9,7 @@ fact.o:fact.c
 rev.o:rev.c
 	gcc -c rev.c
 palindrome.o:palindrome.c
-	gcc -c pallindrome.c
+	gcc -c palindrome.c
 big3.o:big3.c
 	gcc -c big3.c
 sum.o:sum.c
