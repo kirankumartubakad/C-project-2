@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main()
+biggest2()
 {
     int num1, num2;
     // Ask user to enter the two numbers
@@ -20,3 +20,4 @@ int main()
     }
     return 0;
 }
+
