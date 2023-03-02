@@ -1,13 +1,12 @@
 pipeline {
-    agent any
-    stage ('BUILD') {
+    agent none
+    stage ('BUILD'){
         steps{
-        sh '''
+            sh'''
             who
             whoami
-        echo "this is build stage"
-        '''
+            echo "this is build stage"
+            '''
         }
-        
     }
 }
