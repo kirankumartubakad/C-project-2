@@ -1,11 +1,13 @@
 pipeline {
     agent any
     stage ('BUILD') {
-        step
+        steps{
         sh '''
-        who
-        whoami
+            who
+            whoami
         echo "this is build stage"
         '''
+        }
+        
     }
 }
