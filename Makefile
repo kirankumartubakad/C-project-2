@@ -8,3 +8,4 @@ big3.o:big3.c
 	gcc -c big3.c
 oddeven.o:oddeven.c
 	gcc -c oddeven.c
+	
