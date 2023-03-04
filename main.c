@@ -3,6 +3,6 @@ main(){
 	biggest2();
 	biggest3();
 	oddeven();
-	reverse();
+	reve();
 
 }
