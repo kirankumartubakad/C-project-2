@@ -11,3 +11,4 @@ oddeven.o:oddeven.c
 rev.o:rev.c
 	gcc -c rev.c
 	
+
