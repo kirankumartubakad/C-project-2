@@ -1,5 +1,5 @@
 boolean stageResult = true
-pileline {
+pipeline {
     agent any
     stages {
         stage ('stage1') {
@@ -8,7 +8,7 @@ pileline {
                     try {
                         echo "stage1 execution"
                         sh 'sleep 5'
-                        } catch (exception) {
+                        } catch (exception e) {
                             echo "stage failed"
                             stageResult = false
                         }
