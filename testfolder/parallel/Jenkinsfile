@@ -1,0 +1,39 @@
+pipeline {
+    agent any
+    stages {
+        stage ('build') {
+            steps {
+                sh 'sleep 5'
+                echo "this is build stage"
+            }
+        }
+        stage ('test multipal') {
+            parallel {
+                stage ('test1') {
+                    steps {
+                        sh 'sleep 5'
+                        echo "test on window"
+                    }
+                }
+                stage ('test2') {
+                    steps {
+                        sh 'sleep 5'
+                        echo "test on mac"
+                    }
+                }
+                stage ('test3') {
+                    steps {
+                        sh 'sleep 5'
+                        echo "test on linux"
+                    }
+                }
+            }
+        }
+        stage ('deploy') {
+            steps {
+                sh 'sleep 5'
+                echo "deploy stage"
+            }
+        }
+    }
+}
