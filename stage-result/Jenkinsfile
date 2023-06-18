@@ -1,5 +1,5 @@
 boolean stageResult = true
-pileline {
+pipeline {
     agent any
     stages {
         stage ('stage1') {
@@ -27,7 +27,7 @@ pileline {
         stage ('stage3') {
             steps {
                 script {
-                    if (stageResult == failed) {
+                    if (stageResult == false) {
                         echo "stage1 failed so execute stage3"
                     }
                     
