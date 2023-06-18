@@ -6,7 +6,10 @@ pipeline {
         stage ('build'){
             steps {
                 git branch: 'main', credentialsId: 'jenkins-key', url: 'https://github.com/ankit100391/C-project-2.git'
-              sh 'sleep 5'
+             sh '''ls -lrt
+             mkdir ankit
+             ls
+             pwd'''
             } 
         }
         stage ('deploy'){
