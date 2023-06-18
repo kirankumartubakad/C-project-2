@@ -8,7 +8,6 @@ pipeline {
                     try {
                         echo "stage1 execution"
                         sh 'sleep 5'
-                        sh 'exit 1'
                         } catch (exception) {
                             echo "stage failed"
                             stageResult = false
