@@ -1,0 +1,36 @@
+boolean stageResult = true
+pileline {
+    agent any
+    stages {
+        stage ('stage1') {
+            steps {
+                script {
+                    try {
+                        echo "stage1 execution"
+                        sh 'sleep 5'
+                        } catch (exception) {
+                            echo "stage failed"
+                            stageResult = false
+                        }
+                }
+            }
+        }
+        stage ('stage2') {
+            steps {
+                script {
+                    if (stageResult == true) {
+                        echo "stage1 is success so execute stage2"
+                    }
+                }
+            }
+        }
+        stage ('stage3') {
+            steps {
+                script {
+                    if (stageResult == failed)
+                    echo "stage1 failed so execute stage3"
+                }
+            }
+        }
+    }
+}
