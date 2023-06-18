@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+    stages {
+        stage ('build') {
+            steps {
+                catchError(buildResult:'success',stageResult:'failure') {
+                    sh 'sleep 5'
+                    sh 'exit 1'
+                }
+            }
+        }
+        stage ('test') {
+            steps {
+                sh 'sleep 5'
+            }
+        }
+        stage ('deploy') {
+            steps {
+                sh 'sleep 6'
+            }
+        }
+    }
+}
