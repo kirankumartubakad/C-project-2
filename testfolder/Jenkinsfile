@@ -1,5 +1,5 @@
 pipeline {
-    agent { lable 'master' }
+    agent { lable 'slave1' }
     stages{
         stage ('build') {
             steps {
