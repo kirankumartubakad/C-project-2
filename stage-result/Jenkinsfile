@@ -27,8 +27,10 @@ pileline {
         stage ('stage3') {
             steps {
                 script {
-                    if (stageResult == failed)
-                    echo "stage1 failed so execute stage3"
+                    if (stageResult == failed) {
+                        echo "stage1 failed so execute stage3"
+                    }
+                    
                 }
             }
         }
